@@ -10,16 +10,27 @@ header {
   margin-bottom: 20px;
 }
 
+/* Стиль для навигации */
 nav {
   display: flex;
-  justify-content: space-between; /* Распределяет элементы по всей ширине */
+  justify-content: space-between;
   align-items: center;
+  padding: 10px; /* при необходимости */
 }
 
+nav > div:first-child {
+  display: flex;
+  gap: 10px; /* или другой размер, который нужен */
+}
+
+/* Обозначим, что блок с языковыми кнопками всегда будет иметь одинаковый стандарт */
 .lang-switcher {
   display: flex;
-  gap: 5px; /* Расстояние между кнопками */
+  gap: 8px; /* одинаковое расстояние между кнопками */
 }
+
+/* Убедитесь, что нигде не перезаписываются эти стили */
+
 
 
 select {

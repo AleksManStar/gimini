@@ -1,32 +1,48 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title id="page-title"></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-  <a href="index.html" id="nav-home"></a>
-  <a href="catalog.html" id="nav-catalog"></a>
-  <a href="about.html" id="nav-about"></a>
-  <a href="contact.html" id="nav-contact"></a>
-  <div class="lang-switcher">
-    <button class="lang-btn" data-lang="ru">RU</button>
-    <button class="lang-btn" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="de">DE</button>
-  </div>
-</nav>
+<head>
+<meta charset="UTF-8" />
+<title id="page-title"></title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  /* Добавим стили для размещения панели справа */
+  nav {
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы по всему nav */
+    align-items: center;
+  }
 
-    </header>
-    <main>
-      <h1 id="page-heading"></h1>
-      <img src="https://via.placeholder.com/600x400" alt="Изображение для главной страницы">
-      <p id="page-content"></p>
-      <h2></h2>
-      <p></p>
-    </main>
-    <script src="script.js"></script>
-  </body>
+  /* Остальные ссылки помещены слева, а панель справа */
+  /* Если нужно меньше текста слева, нужно дополнительно стилизовать */
+  .lang-switcher {
+    display: flex;
+    gap: 5px; /* Расстояние между кнопками */
+  }
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <div style="display:flex; gap:10px;">
+      <a href="index.html" id="nav-home"></a>
+      <a href="catalog.html" id="nav-catalog"></a>
+      <a href="about.html" id="nav-about"></a>
+      <a href="contact.html" id="nav-contact"></a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 id="page-heading"></h1>
+  <img src="https://via.placeholder.com/600x400" alt="Изображение для главной страницы" />
+  <p id="page-content"></p>
+  <h2></h2>
+  <p></p>
+</main>
+<script src="script.js"></script>
+</body>
 </html>

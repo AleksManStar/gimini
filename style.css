@@ -10,12 +10,17 @@ header {
   margin-bottom: 20px;
 }
 
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #007BFF;
-  font-weight: bold;
+nav {
+  display: flex;
+  justify-content: space-between; /* Распределяет элементы по всей ширине */
+  align-items: center;
 }
+
+.lang-switcher {
+  display: flex;
+  gap: 5px; /* Расстояние между кнопками */
+}
+
 
 select {
   float: right;

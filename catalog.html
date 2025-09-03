@@ -1,132 +1,28 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8" />
-<title id="page-title">Каталог деталей для авто</title>
-<link rel="stylesheet" href="style.css" />
-<style>
-  /* Стили для навигации и страницы */
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-
-  header {
-    background-color: #f0f0f0;
-    padding: 10px 20px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  nav > a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #333;
-  }
-
-  /* Стиль для языковой панели */
-  .lang-switcher {
-    display: flex;
-    gap: 8px;
-  }
-
-  /* Основной контент */
-  main {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 20px;
-  }
-
-  /* Заголовок страницы */
-  h1 {
-    text-align: center;
-  }
-
-  /* Блок для поиска и фильтрации */
-  .filter-section {
-    margin-bottom: 20px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-  }
-
-  /* Стиль для карточек товара */
-  .product {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 10px;
-  }
-
-  /* Адаптивность */
-  @media (max-width: 768px) {
-    .filter-section {
-      flex-direction: column;
-    }
-    nav {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
-</style>
-</head>
-<body>
-<header>
-  <nav>
-    <div style="display:flex; gap:10px;">
-      <a href="index.html" id="nav-home"></a>
-      <a href="catalog.html" id="nav-catalog"></a>
-      <a href="about.html" id="nav-about"></a>
-      <a href="contact.html" id="nav-contact"></a>
-    </div>
-    <div class="lang-switcher">
-      <button class="lang-btn" data-lang="ru">RU</button>
-      <button class="lang-btn" data-lang="en">EN</button>
-      <button class="lang-btn" data-lang="de">DE</button>
-    </div>
-  </nav>
-</header>
-
-<main>
-  <h1 id="page-heading">Каталог деталей для авто</h1>
-
-  <!-- Раздел поиска -->
-  <div class="filter-section">
-    <input type="text" id="searchModel" placeholder="Поиск по модели" onkeyup="filterCatalog()" />
-    <select id="yearFilter" onchange="filterCatalog()">
-      <option value="">Все года</option>
-      <option value="2018">2018</option>
-      <option value="2019">2019</option>
-      <option value="2020">2020</option>
-      <option value="2021">2021</option>
-    </select>
-  </div>
-
-  <!-- Контейнер для отображения товаров -->
-  <div id="catalogContainer"></div>
-</main>
-
-<script>
-  // Данные каталога (замените или расширьте по необходимости)
-  const products = [
-    { model: 'Toyota Corolla', year: '2018', name: 'Лобовое стекло' },
-    { model: 'Toyota Corolla', year: '2019', name: 'Фара передняя' },
-    { model: 'Honda Civic', year: '2020', name: 'Крышка капота' },
-    { model: 'Ford Focus', year: '2018', name: 'Передняя подвеска' },
-    { model: 'Honda Civic', year: '2021', name: 'Рулевая рейка' },
-    { model: 'Toyota Camry', year: '2019', name: 'Радиатор охлаждения' },
-    // Добавляйте свои товары сюда
-  ];
-
-  function filterCatalog() {
-    const searchValue = document.getElementById('searchModel').value.toLowerCase();
-    const selectedYear = document.getElementById('yearFilter').value;
-
-    const container = document.getElementById('catalogContainer');
-    container.innerHTML = '';
-
-    const filtered = products.filter(p =>
+  <head>
+    <meta charset="UTF-8">
+    <title id="page-title"></title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="nav-home"></a>
+        <a href="catalog.html" id="nav-catalog"></a>
+        <a href="about.html" id="nav-about"></a>
+        <a href="contact.html" id="nav-contact"></a>
+        <div class="lang-switcher">
+          <button class="lang-btn" data-lang="ru">RU</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="de">DE</button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 id="page-heading"></h1>
+      <p id="page-content"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

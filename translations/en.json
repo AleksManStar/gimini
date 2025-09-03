@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "index": {
+    "title": "Home Page",
+    "heading": "Welcome!",
+    "content": "This is the home page of your website."
+  },
+  "catalog": {
+    "title": "Catalog",
+    "heading": "Product Catalog",
+    "content": "The products will be here."
+  },
+  "about": {
+    "title": "About Us",
+    "heading": "About the Company",
+    "content": "Information about our company."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "heading": "Get in Touch",
+    "content": "Our contact information."
+  }
+}

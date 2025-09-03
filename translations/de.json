@@ -1,0 +1,28 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "catalog": "Katalog",
+    "about": "Über uns",
+    "contact": "Kontakt"
+  },
+  "index": {
+    "title": "Startseite",
+    "heading": "Willkommen!",
+    "content": "Dies ist die Startseite Ihrer Website."
+  },
+  "catalog": {
+    "title": "Katalog",
+    "heading": "Produktkatalog",
+    "content": "Die Produkte werden hier sein."
+  },
+  "about": {
+    "title": "Über uns",
+    "heading": "Über das Unternehmen",
+    "content": "Informationen über unser Unternehmen."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "heading": "Kontaktieren Sie uns",
+    "content": "Unsere Kontaktdaten."
+  }
+}

@@ -1,47 +1,52 @@
 body {
-  font-family: sans-serif;
   margin: 0;
-  padding: 20px;
-  background-color: #f4f4f4;
-  color: #333;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header {
-  margin-bottom: 20px;
+  background-color: #f0f0f0;
 }
 
-/* Стиль для навигации */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px; /* при необходимости */
+  padding: 10px 20px;
 }
 
 nav > div:first-child {
   display: flex;
-  gap: 10px; /* или другой размер, который нужен */
-}
-
-/* Обозначим, что блок с языковыми кнопками всегда будет иметь одинаковый стандарт */
-.lang-switcher {
-  display: flex;
-  gap: 8px; /* одинаковое расстояние между кнопками */
-}
-
-/* Убедитесь, что нигде не перезаписываются эти стили */
-
-
-
-select {
-  float: right;
+  gap: 20px;
 }
 
 main {
+  padding: 20px;
   max-width: 800px;
   margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav > div:first-child {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .lang-switcher {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+
+  main {
+    padding: 10px;
+  }
 }
